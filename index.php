@@ -178,75 +178,6 @@ include('enviar_email.php');
 <body>
     <div id="__next">
         <div>
-            <div class="bhx-modal-custom container-fluid " style="display:none">
-                <div id="js-bhx-modal-custom__wrapper-MY_MODAL" class="modal-custom--close bhx-modal-custom__wrapper">
-                    <div class="ani-modal-opening bhx-modal-custom__body rounded-none lg:rounded-3xl overflow-hidden bg-white false">
-                        <div class="lg:container h-screen lg:h-auto px-0 py-0 lg:py-0 lg:px-0 lg:flex justify-between overflow-hidden opacity-100 items-stretch bg-white bg-tablue-500 bg-[url(&#x27;/background-main.jpg&#x27;)]">
-                            <div class="lg:order-2 w-auto lg:w-3/5 relative lg:my-0 lg:rounded-none rounded-2xl overflow-hidden">
-                                <button type="button" class="bg-white rounded-lg py-2 px-3 absolute top-5 right-5 z-20 opacity-80 hover:opacity-100 transition">
-                                    <i class="bi-x-lg text-lg"></i>
-                                </button>
-
-                                <div class="h-[300px] lg:h-full  relative overflow-hidden bg-[url(&#x27;/simulacao-protecao-veicular/banner-gl.png&#x27;)] bg-no-repeat bg-contain bg-bottom">
-                                </div>
-                            </div>
-                            <div class="lg:order-1 h-full w-auto lg:w-3/5 xl:w-2/5 px-5 lg:px-10 py-5 bg-white">
-                                <div class=" rounded-full w-14 h-14 lg:h-10 lg:w-10 flex justify-center items-center mx-auto -mt-12 lg:-mt-0 relative z-10 mb-10 lg:mb-0 bg-gray-100">
-                                    <img src="simulacao-protecao-veicular/icons/icon-bp.svg" alt="Dash blue" class="h-6 lg:h-6 w-auto" />
-                                </div>
-                                <h2 class="text-xl lg:text-1xl font-bold headline mb-3  text-gray-800 text-center lg:text-left ">
-                                    SEGURO VEICULAR PARA </h2>
-                                <p class="text-gray-800 lg:order-2">Preencha os campos abaixos para solicitar sua
-                                    cotação.</p>
-                                <form class="lg:my-4 lg:px-0" method="post" action="enviar_email.php">
-                                    <label for="name" class="block mb-3">
-                                        <span class="block font-semibold mb-1 text-gray-700">Nome *:</span>
-                                        <input type="text" name="name" id="name" maxLength="50" class="w-full py-2 px-2 rounded-md border  border-gray-400 ring-tablue-500 outline-none border border-transparent" placeholder="Nome e sobrenome" value="" />
-                                        <span class="text-red-800 text-xs block"></span>
-                                    </label>
-
-                                    <label for="phone" class="block mb-3">
-                                        <span class="block font-semibold mb-1 text-gray-700">Whatsapp *:</span>
-                                        <input type="text" name="phone" id="id-phone" maxLength="15" class="w-full py-2 px-2 rounded-md border  border-gray-400 ring-tablue-500 outline-none border border-transparent" placeholder="(XX) XXXXX-XXXX" value="" />
-                                        <span class="text-red-800 text-xs block"></span>
-                                    </label>
-
-                                    <label for="plate" class="block mb-3">
-                                        <span class="block font-semibold mb-1 text-white">Placa do veículo:</span>
-                                        <input type="text" name="plate" id="id-plate" maxLength="8" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="XXX-XXXX" value="" />
-                                        <style>
-                                            #id-plate,
-                                            #id-plate2 {
-                                                text-transform: uppercase;
-                                            }
-                                        </style>
-                                        <span class="text-red-800 text-xs block"></span>
-                                    </label>
-
-                                    <label for="email" class="block mb-3">
-                                        <span class="block font-semibold mb-1 text-gray-700">E-mail *:</span>
-                                        <input type="email" name="email" id="email" maxLength="50" class="w-full py-2 px-2 rounded-md border  border-gray-400 ring-tablue-500 outline-none border border-transparent" placeholder="meu@email.com.br" value="" />
-
-                                        <span class="text-red-800 text-xs block"></span>
-                                    </label>
-
-                                    <button type="submit" class="group transition rounded-xl space-x-2 items-center inline-flex py-2 px-4 w-full bg-tbblue-500 hover:bg-tbblue-100 text-white justify-center mt-3">
-                                        <span class="text-md text-md font-semibold">FAZER COTAÇÃO AGORA</span>
-                                        <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bhx-modal-custom container-fluid " style="display:none">
-                <div id="js-bhx-modal-custom__wrapper-SECOND_MODAL" class="modal-custom--close bhx-modal-custom__wrapper">
-                    <div class="ani-modal-opening bhx-modal-custom__body rounded-none lg:rounded-3xl overflow-hidden bg-white false">
-                        <p>MEU MODAL 2</p>
-                    </div>
-                </div>
-            </div>
             <main class="">
                 <div class="menu-responsive-wrapper-mobile">
                     <div class="flex justify-between px-3 py-3 items-center">
@@ -335,6 +266,7 @@ include('enviar_email.php');
                 <div class="bg-[url(&#x27;/simulacao-protecao-veicular/background-main.svg&#x27;)] bg-[#0081ff] bg-auto">
                     <img src="simulacao-protecao-veicular/banner-gl.png" class="hidden" alt="banner gusttavo lima" />
                     <img src="simulacao-protecao-veicular/background-main.svg" class="hidden" alt="background" />
+                    
                     <div class="container max-w-6xl px-0 pb-0 lg:pb-0 lg:px-0 lg:flex justify-between lg:space-x-5 opacity-100 items-stretch">
                         <div class="w-auto lg:w-2/3 xl:w-3/5 relative lg:my-0">
                             <div class="h-[220px] md:h-[380px] lg:h-full overflow-hidden bg-[url(&#x27;/simulacao-protecao-veicular/banner-gl.png&#x27;)] bg-bottom bg-contain bg-no-repeat relative">
@@ -349,25 +281,32 @@ include('enviar_email.php');
                                     <form class="lg:my-4 lg:px-0" method="post" action="enviar_email.php">
                                         <label for="name" class="block mb-3">
                                             <span class="block font-semibold mb-1 text-white">Nome *:</span>
-                                            <input type="text" name="name" id="name" maxLength="50" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="Nome e sobrenome" value="" />
+                                            <input type="text" name="field_name" id="id-name" maxLength="50" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="Nome e sobrenome" value="" />
                                             <span class="text-red-800 text-xs block"></span>
                                         </label>
 
                                         <label for="phone" class="block mb-3">
                                             <span class="block font-semibold mb-1 text-white">Whatsapp *:</span>
-                                            <input type="text" name="phone" id="id-phone2" maxLength="15" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="(XX) XXXXX-XXXX" value="" />
+                                            <input type="text" name="field_phone" id="id-phone" maxLength="15" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="(XX) XXXXX-XXXX" value="" />
                                             <span class="text-red-800 text-xs block"></span>
                                         </label>
 
                                         <label for="plate" class="block mb-3">
                                             <span class="block font-semibold mb-1 text-white">Placa do veículo:</span>
-                                            <input type="text" name="plate" id="id-plate2" maxLength="8" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="XXX-XXXX" value="" />
+                                            <input type="text" name="field_plate" id="id-plate" maxLength="8" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="XXX-XXXX" value="" />
                                             <span class="text-red-800 text-xs block"></span>
                                         </label>
 
+                                        <style>
+                                            #id-plate,
+                                            #id-plate2 {
+                                                text-transform: uppercase;
+                                            }
+                                        </style>
+
                                         <label for="email" class="block mb-3">
                                             <span class="block font-semibold mb-1 text-white">E-mail *:</span>
-                                            <input type="email" name="email" id="email" maxLength="50" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="meu@email.com.br" value="" />
+                                            <input type="email" name="field_email" id="id-email" maxLength="50" class="w-full py-2 px-2 rounded-md border  border-transparent ring-tablue-500 outline-none border border-transparent" placeholder="meu@email.com.br" value="" />
                                             <span class="text-red-800 text-xs block"></span>
                                         </label>
 

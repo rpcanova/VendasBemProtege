@@ -2,15 +2,15 @@
 // Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Coleta os dados do formulário
-    $nome = $_POST['name'];
-    $telefone = $_POST['phone'];
-    $placa = $_POST['plate'];
-    $email = $_POST['email'];
+    $nome = $_POST['field_name'];
+    $telefone = $_POST['field_phone'];
+    $placa = $_POST['field_plate'];
+    $email = $_POST['field_email'];
     
     // Configurações do e-mail
-    $to = 'novacotacaobemprotege@gmail.com'; // Substitua pelo seu endereço de e-mail
+    $to = 'rpcanova@hotmail.com'; // Substitua pelo seu endereço de e-mail
     $subject = 'Cotação de Veículo';
-    $message = '
+    $message = "
         <html>
         <p>Olá, quero fazer uma cotação</p>
         <p>Nome: $nome</p>
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Placa do veículo: $placa</p>
         <p>E-mail: $email</p>
         </html>
-    ';
+    ";
 
     // Envia o e-mail
     $headers = "MIME-Version: 1.0\n";
