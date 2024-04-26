@@ -23,37 +23,10 @@ include('enviar_email.php');
     <script src="simulacao-protecao-veicular/_next/static/chunks/main-95cfce8d2012a088.js" defer=""></script>
     <script src="simulacao-protecao-veicular/_next/static/chunks/pages/_app-311a78dd6c633fb6.js" defer=""></script>
     <script src="simulacao-protecao-veicular/_next/static/chunks/338-1311dc31b28d02a8.js" defer=""></script>
+    <script src="/br/seguro-online/v-a/_next/static/chunks/fd9d1056-40d217ca7a8bcb24.js" async="" crossorigin=""></script>
     <script src="simulacao-protecao-veicular/_next/static/chunks/pages/index-2d9b39557cf87d0b.js" defer=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#id-phone').mask('(00) 90000-0000');
-            $('#id-phone2').mask('(00) 90000-0000');
-            $('#id-plate').mask('AAA-0B00', {
-                translation: {
-                    'A': {
-                        pattern: /[A-Za-z]/
-                    },
-                    'B': {
-                        pattern: /[A-Za-z0-9]/
-                    }
-                }
-            });
-
-            $('#id-plate2').mask('AAA-0B00', {
-                translation: {
-                    'A': {
-                        pattern: /[A-Za-z]/
-                    },
-                    'B': {
-                        pattern: /[A-Za-z0-9]/
-                    }
-                }
-            });
-        });
-    </script>
-
     <script type='text/javascript' id='chaty-front-end-js-extra'>
         /* <![CDATA[ */
         var chaty_settings = {
@@ -171,6 +144,7 @@ include('enviar_email.php');
         };
         /* ]]> */
     </script>
+
     <script type='text/javascript' src='simulacao-protecao-veicular/plugins/chaty/js/cht-front-script.min.js?ver=3.0.61656363275' id='chaty-front-end-js'></script>
 
 </head>
@@ -263,10 +237,11 @@ include('enviar_email.php');
                         </nav>
                     </div>
                 </div>
+
                 <div class="bg-[url(&#x27;/simulacao-protecao-veicular/background-main.svg&#x27;)] bg-[#0081ff] bg-auto">
                     <img src="simulacao-protecao-veicular/banner-gl.png" class="hidden" alt="banner gusttavo lima" />
                     <img src="simulacao-protecao-veicular/background-main.svg" class="hidden" alt="background" />
-                    
+
                     <div class="container max-w-6xl px-0 pb-0 lg:pb-0 lg:px-0 lg:flex justify-between lg:space-x-5 opacity-100 items-stretch">
                         <div class="w-auto lg:w-2/3 xl:w-3/5 relative lg:my-0">
                             <div class="h-[220px] md:h-[380px] lg:h-full overflow-hidden bg-[url(&#x27;/simulacao-protecao-veicular/banner-gl.png&#x27;)] bg-bottom bg-contain bg-no-repeat relative">
@@ -328,7 +303,6 @@ include('enviar_email.php');
                                 <div class="grid-item  rounded-xl py-4 lg:py-6 px-3 lg:px-3 lg:flex lg:flex-col lg:space-y-2 lg:w-1/3 bg-white lg:bg-transparent text-center lg:text-left">
                                     <div class="lg:flex lg:space-x-4 lg:items-center"><img src="simulacao-protecao-veicular/icons/certificado.svg" alt="Dash blue" class="h-16 lg:h-16 w-12 lg:w-auto mx-auto">
                                         <div class="space-y-2">
-                                            <!-- <p class="text-sm">Nota mais alta de avaliações no Reclame Aqui!</p> -->
                                             <h3 class="font-bold">Autorizado pela SUSEP</h3>
                                         </div>
                                     </div>
@@ -342,6 +316,7 @@ include('enviar_email.php');
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="grid-item  rounded-xl py-4 lg:py-6 px-3 lg:px-3 lg:flex lg:flex-col lg:space-y-2 lg:w-1/3 bg-white lg:bg-transparent text-center lg:text-left">
                                     <div class="lg:flex lg:space-x-4 lg:items-center"><img src="simulacao-protecao-veicular/icons/escudo.svg" alt="Dash blue" class="h-16 lg:h-16 w-12 lg:w-auto mx-auto">
                                         <div class="space-y-2">
@@ -352,401 +327,378 @@ include('enviar_email.php');
                                 </div>
                             </div>
                         </div>
+
                         <div class="lg:h-full relative overflow-hidden bg-[url('/simulacao-protecao-veicular/banner.jpg')] bg-center bg-no-repeat bg-cover">
                             <img src="simulacao-protecao-veicular/sprite-rounded.svg" alt="sprite rounded" class="absolute bottom-0 left-0 ">
                         </div>
                     </div>
                 </div>
 
-                <div id="protecao-veicular" class="px-5 lg:px-0 pt-5 pb-7 lg:py-20 bg-gray-200 opacity-100 text-center lg:-mt-16">
-                    <div class="lg:container text-center">
-                        <div class="flex flex-col space-y-1 text-center lg:my-8">
-                            <h2 class="text-2xl lg:text-3xl font-bold headline mb-3  mx-auto">
-                                Seguro veicular para <span>todos os perfis</span>
-                            </h2>
+                <div class="container pt-20 text-center">
+                    <h1 class="md:text-5xl text-3xl false font-bold text-gray-800" style="font-family: __Monda_146b97, __Monda_Fallback_146b97;">
+                        Somos a revolução dos seguros
+                    </h1>
+                    <h2 class="text-xl pt-5">Veja o vídeo e entenda!</h2>
+                </div>
+
+                <div class="flex justify-center lg:py-10 py-5 container">
+                    <div class="relative">
+                        <video width="640" height="540" poster="simulacao-protecao-veicular/videoprincipal1.png" class="video-player rounded-lg">
+                            <source src="simulacao-protecao-veicular/videoprincipal.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-20 h-20" color="white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="md:py-20 py-10 bg-[#000D37]">
+                    <div class="container">
+                        <h1 class="md:text-5xl text-3xl false font-bold text-white" style="font-family: __Monda_146b97, __Monda_Fallback_146b97;">
+                            Um seguro sem burocracia!
+                        </h1>
+                        <h2 class="text-2xl pt-5 text-white">Tenha a tranquilidade que você merece onde e quando precisar</h2>
+                        <div class="grid lg:grid-cols-4 grid-cols-1 gap-5 mt-4">
+                            <div class="md:w-[100%] rounded-lg mt-10 flex flex-col">
+                                <img class="rounded-t-lg h-48 object-cover" src="simulacao-protecao-veicular/carro-roubado.png" alt="">
+                                <div class="px-3 py-4 bg-white rounded-b-lg flex-grow">
+                                    <div class="font-bold text-xl mb-2">Proteção contra furto e roubo</div>
+                                    <p class="text-gray-700 md:text-lg text-sm">Não se preocupe mais com roubos e furtos! Se algo acontecer com o seu veículo, a gente te indeniza e cobre todos os prejuízos! </p>
+                                </div>
+                            </div>
+
+                            <div class="md:w-[100%] rounded-lg mt-10 flex flex-col">
+                                <img class="rounded-t-lg h-48 object-cover" src="simulacao-protecao-veicular/carro-acidente.png" alt="">
+                                <div class="px-3 py-4 bg-white rounded-b-lg flex-grow">
+                                    <div class="font-bold text-xl mb-2">Colisão</div>
+                                    <p class="text-gray-700 md:text-lg text-sm">Colisão? Tranquilo! Você é protegido em caso de danos e também pode incluir o serviço para terceiros!</p>
+                                </div>
+                            </div>
+                            <div class="md:w-[100%] rounded-lg mt-10 flex flex-col">
+                                <img class="rounded-t-lg h-48 object-cover" src="simulacao-protecao-veicular/carro-reboque.png" alt="">
+                                <div class="px-3 py-4 bg-white rounded-b-lg flex-grow">
+                                    <div class="font-bold text-xl mb-2">Assistência 24h</div>
+                                    <p class="text-gray-700 md:text-lg text-sm">Problemas com seu veículo na madrugada? Com a nossa Assistência 24h, você pode ficar despreocupado a qualquer hora! </p>
+                                </div>
+                            </div>
+                            <div class="md:w-[100%] rounded-lg mt-10 flex flex-col">
+                                <img class="rounded-t-lg h-48 object-cover" src="simulacao-protecao-veicular/cobertura-nacional.png" alt="">
+                                <div class="px-3 py-4 bg-white rounded-b-lg flex-grow">
+                                    <div class="font-bold text-xl mb-2">Cobertura Nacional</div>
+                                    <p class="text-gray-700 md:text-lg text-sm">Viaje sem preocupações! Nossa Cobertura Nacional deixa seu veículo protegido em qualquer lugar do país. </p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-0 lg:px-3 mt-5 lg:mt-10 mb-0 md:px-0 mx-auto">
-                            <div class="bg-white rounded-2xl overflow-hidden">
-                                <div class="m-3 lg:m-5 items-center flex flex-col justify-center">
-                                    <div class="flex flex-row items-center lg:flex-col ">
-                                        <div class="overflow-hidden flex items-start h-[180px] flex items-center">
-                                            <img src="simulacao-protecao-veicular/carro.jpg" alt="Rio" class=" w-auto rounded-t-2xl mb-5 " />
-                                        </div>
-                                        <div class="w-1/2 lg:w-auto">
-                                            <p class="flex items-center space-x-2 bg-blue-100 text-blue-900 text-xs px-4 py-1 rounded-2xl mb-1">
-                                                <img src="simulacao-protecao-veicular/icons/icon-bp.svg" alt="Brazil mask" class="h-3" />
-                                                <span>SEGURO VEICULAR BP</span>
-                                            </p>
-                                            <h3 class="text-xl md:text-lg lg:text-2xl font-bold mb-2 mt-2">CARROS</h3>
-                                        </div>
-                                    </div>
-
-                                    <ul class="text-left w-full space-y-1">
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Carros de passeio</span>
-                                        </li>
-
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Carros de leilão</span>
-                                        </li>
-
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Carros de aplicativo</span>
-                                        </li>
-
-                                        <li class="pl-7 flex items-center justify-start w-full ">
-                                            <span>E mais!</span>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="group transition rounded-xl space-x-2 items-center inline-flex py-2 px-4 w-full md:w-auto bg-tbblue-500 hover:bg-tbblue-100 text-white justify-center mt-6">
-                                        <span class="text-md text-md font-semibold">FAZER COTAÇÃO</span>
-                                        <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
-                                    </button>
-                                    <a href="#beneficios" class="text-tbblue-500 hover:text-tbblue-100 transition space-x-2 items-center inline-flex w-full md:w-auto group justify-center mt-3">
-                                        <span class="text-md font-semibold">Ver detalhes</span>
-                                        <i class="bi-chevron-down text-lg mt-1 text-md group-hover:ml-4 transition-all"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="bg-white rounded-2xl overflow-hidden">
-                                <div class="m-3 lg:m-5 items-center flex flex-col justify-center">
-                                    <div class="flex flex-row items-center lg:flex-col ">
-                                        <div class="overflow-hidden flex items-start h-[180px] flex items-center">
-                                            <img src="simulacao-protecao-veicular/moto.jpg" alt="Rio" class=" w-auto rounded-t-2xl mb-5 " />
-                                        </div>
-                                        <div class="w-1/2 lg:w-auto">
-                                            <p class="flex items-center space-x-2 bg-blue-100 text-blue-900 text-xs px-4 py-1 rounded-2xl mb-1">
-                                                <img src="simulacao-protecao-veicular/icons/icon-bp.svg" alt="Brazil mask" class="h-3" />
-                                                <span>SEGURO VEICULAR BP</span>
-                                            </p>
-                                            <h3 class="text-xl md:text-lg lg:text-2xl font-bold mb-2 mt-2">MOTOS</h3>
-                                        </div>
-                                    </div>
-                                    <ul class="text-left w-full space-y-1">
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Todas as cilindradas</span>
-                                        </li>
-
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Motos de aplicativo</span>
-                                        </li>
-
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Motos de delivery</span>
-                                        </li>
-
-                                        <li class="pl-7 flex items-center justify-start w-full ">
-                                            <span>E mais!</span>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="group transition rounded-xl space-x-2 items-center inline-flex py-2 px-4 w-full md:w-auto bg-tbblue-500 hover:bg-tbblue-100 text-white justify-center mt-6">
-                                        <span class="text-md text-md font-semibold">FAZER COTAÇÃO</span>
-                                        <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
-                                    </button>
-                                    <a href="#beneficios" class="text-tbblue-500 hover:text-tbblue-100 transition space-x-2 items-center inline-flex w-full md:w-auto group justify-center mt-3">
-                                        <span class="text-md font-semibold">Ver detalhes</span>
-                                        <i class="bi-chevron-down text-lg mt-1 text-md group-hover:ml-4 transition-all"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="bg-white rounded-2xl overflow-hidden">
-                                <div class="m-3 lg:m-5 items-center flex flex-col justify-center">
-                                    <div class="flex flex-row items-center lg:flex-col ">
-                                        <div class="overflow-hidden flex items-start h-[180px] flex items-center">
-                                            <img src="simulacao-protecao-veicular/utilitario.jpg" alt="Rio" class=" w-auto rounded-t-2xl mb-5 " />
-                                        </div>
-                                        <div class="w-1/2 lg:w-auto">
-                                            <p class="flex items-center space-x-2 bg-blue-100 text-blue-900 text-xs px-4 py-1 rounded-2xl mb-1">
-                                                <img src="simulacao-protecao-veicular/icons/icon-bp.svg" alt="Brazil mask" class="h-3" />
-                                                <span>SEGURO VEICULAR BP</span>
-                                            </p>
-                                            <h3 class="text-xl md:text-lg lg:text-2xl font-bold mb-2 mt-2">UTILITÁRIOS
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <ul class="text-left w-full space-y-1">
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>SUV</span>
-                                        </li>
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Caminhonetes</span>
-                                        </li>
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Vans de carga</span>
-                                        </li>
-                                        <li class="pl-7 flex items-center justify-start w-full ">
-                                            <span>E mais!</span>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="group transition rounded-xl space-x-2 items-center inline-flex py-2 px-4 w-full md:w-auto bg-tbblue-500 hover:bg-tbblue-100 text-white justify-center mt-6">
-                                        <span class="text-md text-md font-semibold">FAZER COTAÇÃO</span>
-                                        <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
-                                    </button>
-                                    <a href="#beneficios" class="text-tbblue-500 hover:text-tbblue-100 transition space-x-2 items-center inline-flex w-full md:w-auto group justify-center mt-3">
-                                        <span class="text-md font-semibold">Ver detalhes</span>
-                                        <i class="bi-chevron-down text-lg mt-1 text-md group-hover:ml-4 transition-all"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="bg-white rounded-2xl overflow-hidden">
-                                <div class="m-3 lg:m-5 items-center flex flex-col justify-center">
-                                    <div class="flex flex-row items-center lg:flex-col ">
-                                        <div class="overflow-hidden flex items-start h-[180px] flex items-center">
-                                            <img src="simulacao-protecao-veicular/caminhao.jpg" alt="Rio" class=" w-auto rounded-t-2xl mb-5 " />
-                                        </div>
-                                        <div class="w-1/2 lg:w-auto">
-                                            <p class="flex items-center space-x-2 bg-blue-100 text-blue-900 text-xs px-4 py-1 rounded-2xl mb-1">
-                                                <img src="simulacao-protecao-veicular/icons/icon-bp.svg" alt="Brazil mask" class="h-3" />
-                                                <span>SEGURO VEICULAR BP</span>
-                                            </p>
-                                            <h3 class="text-xl md:text-lg lg:text-2xl font-bold mb-2 mt-2">CAMINHÕES
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <ul class="text-left w-full space-y-1">
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Cavalo mecâcnico</span>
-                                        </li>
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Agregados</span>
-                                        </li>
-                                        <li class="flex space-x-2 items-center justify-start w-full">
-                                            <i class="bi-check text-xl text-green-500"></i>
-                                            <span>Implementos</span>
-                                        </li>
-                                        <li class="pl-7 flex items-center justify-start w-full ">
-                                            <span>E mais!</span>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="group transition rounded-xl space-x-2 items-center inline-flex py-2 px-4 w-full md:w-auto bg-tbblue-500 hover:bg-tbblue-100 text-white justify-center mt-6">
-                                        <span class="text-md text-md font-semibold">FAZER COTAÇÃO</span>
-                                        <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
-                                    </button>
-                                    <a href="#beneficios" class="text-tbblue-500 hover:text-tbblue-100 transition space-x-2 items-center inline-flex w-full md:w-auto group justify-center mt-3">
-                                        <span class="text-md font-semibold">Ver detalhes</span>
-                                        <i class="bi-chevron-down text-lg mt-1 text-md group-hover:ml-4 transition-all"></i>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="md:pt-20 pt-10  flex justify-center container">
+                            <a class="py-4 px-22 lg:w-1/5 w-full bg-[#0A44EC] rounded-lg text-center text-white lg:text-xl font-bold" href="#">CONTRATE AGORA</a>
                         </div>
                     </div>
-                    <div class="px-3 md:px-0"></div>
                 </div>
-                <div class="lg:container px-5 lg:px-0 py-5 lg:pt-10 opacity-100 text-center" id="beneficios">
-                    <div class=" px-0 text-center">
-                        <div class="flex flex-col space-y-1 text-center lg:my-8">
-                            <h2 class="text-2xl lg:text-3xl font-bold headline mb-3  mx-auto max-w-xl">
-                                Não tenha imprevistos, tenha o <span>seguro veicular</span>
-                                da Bem Protege
-                            </h2>
-                            <p class="text-xl max-w-lg mx-auto ">Temos uma cobertura completa para colisão, furto, roubo
-                                e muito mais!</p>
-                            <a href="#benefits-all" class="text-tbblue-500 hover:text-tbblue-100 transition space-x-2 items-center inline-flex w-full md:w-auto group justify-center ">
-                                <span class="text-xl font-semibold">Confira todos os benefícios</span>
-                                <i class="bi-chevron-down text-xl mt-1 text-md group-hover:ml-4 transition-all"></i>
-                            </a>
+
+                <div class="bg-cover w-full md:py-20 py-10" style="background-image: url(&quot;simulacao-protecao-veicular/fundo.png&quot;);">
+                    <div class="container text-center">
+                        <h1 class="md:text-5xl text-3xl false font-bold text-gray-800" style="font-family: __Monda_146b97, __Monda_Fallback_146b97;">
+                            Temos tudo que você precisa em um só lugar!
+                        </h1>
+                        <div class="grid lg:grid-cols-3 grid-cols-1 gap-2 ">
+                            <div class=" px-3 lg:py-10 py-5 md:py-5 mt-10 rounded-2xl flex">
+                                <div class="space-y-4 text-start">
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="lg:w-16 lg:h-16 w-10 h-10" color="[#000D37]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <p class=" font-bold text-xl">Onde estamos</p>
+                                    <p class="lg:text-lg md:text-sm">Nossas unidades de atendimento estão espalhadas por todo o Brasil para te atender em qualquer lugar que você precisar </p>
+                                </div>
+                            </div>
+
+                            <div class=" px-3 lg:py-10 py-5 md:py-5 mt-10 rounded-2xl flex">
+                                <div class="space-y-4 text-start">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="lg:w-16 lg:h-16 w-10 h-10" color="[#000D37]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"></path>
+                                    </svg>
+                                    <p class=" font-bold text-xl">Para todo motorista</p>
+                                    <p class="lg:text-lg md:text-sm">Qualquer motorista habilitado pode contratar nosso seguro, seja para uso pessoal ou comercial .</p>
+                                </div>
+                            </div>
+
+                            <div class=" px-3 lg:py-10 py-5 md:py-5 mt-10 rounded-2xl flex">
+                                <div class="space-y-4 text-start"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" class="lg:w-16 lg:h-16 w-10 h-10" color="[#000D37]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M240,112H229.2L201.42,49.5A16,16,0,0,0,186.8,40H69.2a16,16,0,0,0-14.62,9.5L26.8,112H16a8,8,0,0,0,0,16h8v80a16,16,0,0,0,16,16H64a16,16,0,0,0,16-16V192h96v16a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16V128h8a8,8,0,0,0,0-16ZM69.2,56H186.8l24.89,56H44.31ZM216,208H192V184a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8v24H40V128H216Z"></path>
+                                    </svg>
+                                    <p class=" font-bold text-xl">Tipos de veículos</p>
+                                    <p class="lg:text-lg md:text-sm">A nossa cobertura é abrangente, oferecemos seguros para motos, carros, vans e caminhões</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full mb-10 mt-12 md:px-0">
-                            <div class="bg-[#F3F3F3] rounded-2xl overflow-hidden">
-                                <div class="overflow-hidden flex items-start">
-                                    <img src="simulacao-protecao-veicular/furto.jpg" alt="Brazil mask" class="w-full h-auto rounded-t-2xl" />
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="px-3 md:px-5 py-3 md:py-6 items-center flex flex-col justify-center">
-                                        <h3 class="text-xl md:text-lg lg:text-md font-bold mb-3">Furto e roubo</h3>
-                                        <p class="text-md text-gray-600">Com a BP, você pode se sentir protegido em todo
-                                            lugar, a qualquer momento</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-[#F3F3F3] rounded-2xl overflow-hidden">
-                                <div class="overflow-hidden flex items-start">
-                                    <img src="simulacao-protecao-veicular/guincho.jpg" alt="Brazil mask" class="w-full h-auto rounded-t-2xl" />
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="px-3 md:px-5 py-3 md:py-6 items-center flex flex-col justify-center">
-                                        <h3 class="text-xl md:text-lg lg:text-md font-bold mb-3">Guincho ilimitado
-                                            (sinistro)</h3>
-                                        <p class="text-md text-gray-600">Você pode ter um serviço de até 1000km (somando
-                                            a ida com a volta) em todo o território nacional</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-[#F3F3F3] rounded-2xl overflow-hidden">
-                                <div class="overflow-hidden flex items-start">
-                                    <img src="simulacao-protecao-veicular/assistencia.jpg" alt="Brazil mask" class="w-full h-auto rounded-t-2xl" />
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="px-3 md:px-5 py-3 md:py-6 items-center flex flex-col justify-center">
-                                        <h3 class="text-xl md:text-lg lg:text-md font-bold mb-3">Assistência 24 horas
-                                        </h3>
-                                        <p class="text-md text-gray-600">Nossa equipe conta com especialistas para
-                                            atender você 24 horas por dia</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-[#F3F3F3] rounded-2xl overflow-hidden">
-                                <div class="overflow-hidden flex items-start">
-                                    <img src="simulacao-protecao-veicular/pane.jpg" alt="Brazil mask" class="w-full h-auto rounded-t-2xl" />
-                                </div>
-                                <div class="flex items-center">
-                                    <div class="px-3 md:px-5 py-3 md:py-6 items-center flex flex-col justify-center">
-                                        <h3 class="text-xl md:text-lg lg:text-md font-bold mb-3">Pane elétrica e
-                                            mecânica</h3>
-                                        <p class="text-md text-gray-600">Evite estresse desnecessário, escolha a BP e
-                                            garanta sua tranquilidade</p>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div class="overflow-x-auto flex justify-center py-10">
+                            <table class="table-auto">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="px-2 md:px-4 py-2 text-center bg-[#000D37] text-white md:text-xl text-sm rounded-tl-lg">Bem Protege</th>
+                                        <th class="px-2 md:px-4 py-2 text-center bg-red-500 text-white md:text-xl text-sm rounded-tr-lg">Outros Seguros</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="bg-gray-200">
+                                        <td class="px-5 text-left md:text-xl text-sm">Pagamento Mensal</td>
+
+                                        <td class="py-5 flex justify-center ">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" color="green" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: green;">
+                                                <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                            </svg>
+                                        </td>
+
+                                        <td class="md:px-20 px-10 py-2">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" color="red" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: red;">
+                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                            </svg>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="bg-gray-100">
+                                        <td class="px-5 text-left md:text-xl text-sm">Sem Análise de Perfil</td>
+
+                                        <td class="py-5 flex justify-center ">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" color="green" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: green;">
+                                                <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                            </svg>
+                                        </td>
+
+                                        <td class="md:px-20 px-10 py-2">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" color="red" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: red;">
+                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                            </svg>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="bg-gray-200">
+                                        <td class="px-5 text-left md:text-xl text-sm">Veículos de leilão</td>
+
+                                        <td class="py-5 flex justify-center ">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" color="green" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: green;">
+                                                <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                            </svg>
+                                        </td>
+
+                                        <td class="md:px-20 px-10 py-2">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" color="red" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: red;">
+                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                            </svg>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="bg-gray-100">
+                                        <td class="px-5 text-left md:text-xl text-sm">Veículos antigos</td>
+
+                                        <td class="py-5 flex justify-center ">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" color="green" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: green;">
+                                                <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                            </svg>
+                                        </td>
+
+                                        <td class="md:px-20 px-10 py-2">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" color="red" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: red;">
+                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                            </svg>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="bg-gray-200">
+                                        <td class="px-5 text-left md:text-xl text-sm">Melhores parceiros</td>
+
+                                        <td class="py-5 flex justify-center ">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" color="green" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: green;">
+                                                <circle fill="#4CAF50" cx="24" cy="24" r="21"></circle>
+                                                <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"></polygon>
+                                            </svg>
+                                        </td>
+
+                                        <td class="md:px-20 px-10 py-2">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" color="red" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: red;">
+                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="py-10 flex justify-center container">
+                            <a class="py-4 px-22 lg:w-1/5 w-full bg-[#0A44EC] rounded-lg text-center text-white lg:text-xl font-bold" href="#">CONTRATE AGORA</a>
                         </div>
                     </div>
-                    <div class="px-3 md:px-0"></div>
                 </div>
-                <div class="bg-white">
-                    <div class=" bg-white">
-                        <div class="lg:container px-5 lg:px-3 pb-8 lg:pb-14 md:px-5 md:flex justify-between items-center opacity-100 ">
-                            <div class="lg:order-1 lg:w-1/2 flex items-center justify-center">
-                                <img src="simulacao-protecao-veicular/protecao.png" alt="" class="" />
-                            </div>
-                            <div class="lg:order-2 lg:w-1/2 space-y-5 md:px-16 pt-5 md:pt-5 pb-5 md:pb-10 lg:mt-5">
-                                <div class="flex items-center space-x-4 mb-4">
-                                    <img src="simulacao-protecao-veicular/icons/icon-head-dash-blue.svg" alt="Brazil mask" class="h-full" />
-                                    <h3 class="text-md font-semibold text-gray-600">SEGURO PARA TERCEIROS</h3>
-                                </div>
-                                <h2 class="text-2xl lg:text-3xl font-bold headline mb-3  ">
-                                    Seguro para terceiros <span>até 100 mil</span>
-                                </h2>
-                                <p class="text-md lg:text-xl">Quer ficar despreocupado com custos inesperados e dar a si
-                                    mesmo a tranquilidade que você merece? O nosso seguro para terceiros possui
-                                    cobertura de até 100 mil reais!</p>
-                                <ul class="text-left w-full space-y-1 mt-4">
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Conserto rápido</span>
-                                    </li>
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Melhores oficinas</span>
-                                    </li>
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Assistência por telefone e aplicativo</span>
-                                    </li>
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Até R$ 100.000</span>
-                                    </li>
-                                </ul>
-                                <button type="button" class="group transition rounded-xl space-x-2 items-center inline-flex
-				py-2 px-4
-				w-full md:w-auto
-				bg-tbblue-500 hover:bg-tbblue-100 text-white
-			justify-center mt-3">
-                                    <span class="text-md text-md font-semibold">FAÇA UMA COTAÇÃO AGORA</span>
-                                    <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
+
+                <div class="md:py-20 py-10 bg-[#000D37]">
+                    <div class="container text-center">
+                        <h1 class="md:text-5xl text-3xl false font-bold text-white" style="font-family: __Monda_146b97, __Monda_Fallback_146b97;">
+                            Confira o que dizem os beneficiários da Bem Protege
+                        </h1>
+
+                        <div class="grid md:grid-cols-4 grid-cols-2 gap-5 lg:py-10 py-5">
+                            <div class="relative">
+                                <video width="400" height="200" poster="simulacao-protecao-veicular/video1.png" class="video-player rounded-lg">
+                                    <source src="simulacao-protecao-veicular/01_reduzido.mp4" type="video/mp4">
+                                </video>
+
+                                <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-20 h-20" color="white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path>
+                                    </svg>
                                 </button>
                             </div>
-                        </div>
-                    </div>
-                    <div class=" bg-[#EFF4FA]">
-                        <div class="lg:container px-5 lg:px-3 py-8 lg:py-14 md:px-5 md:flex justify-between items-center opacity-100 ">
-                            <div class="lg:order-2 lg:w-1/2 flex items-center justify-center">
-                                <img src="simulacao-protecao-veicular/assistencia.png" alt="" class="" />
-                            </div>
-                            <div class="lg:order-1 lg:w-1/2 space-y-5 md:px-16 pt-5 md:pt-5 pb-5 md:pb-10 lg:mt-5">
-                                <div class="flex items-center space-x-4 mb-4">
-                                    <img src="simulacao-protecao-veicular/icons/icon-head-dash-blue.svg" alt="Brazil mask" class="h-full" />
-                                    <h3 class="text-md font-semibold text-gray-600">ASSISTÊNCIA 24 HORAS</h3>
-                                </div>
-                                <h2 class="text-2xl lg:text-3xl font-bold headline mb-3  ">
-                                    <span>Assistência 24h</span>
-                                    em todo o território nacional
-                                </h2>
-                                <p class="text-md lg:text-xl">Oferecemos uma assistência completa e disponível 24 horas
-                                    por dia, em todo o território nacional. Isso significa que você pode contar com
-                                    ajuda profissional e imediata em qualquer lugar do país, não importa a hora ou
-                                    situação.</p>
-                                <ul class="text-left w-full space-y-1 mt-4">
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Cobertura completa</span>
-                                    </li>
 
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Atendimento humanizado</span>
-                                    </li>
+                            <div class="relative">
+                                <video id="wihr428uf" width="400" height="200" poster="simulacao-protecao-veicular/video2.png" class="video-player rounded-lg">
+                                    <source src="simulacao-protecao-veicular/02_reduzido.mp4" type="video/mp4">
+                                </video>
 
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Assistência rápida</span>
-                                    </li>
-                                </ul>
-
-                                <button type="button" class="group transition rounded-xl space-x-2 items-center inline-flex py-2 px-4 w-full md:w-auto bg-tbblue-500 hover:bg-tbblue-100 text-white justify-center mt-3">
-                                    <span class="text-md text-md font-semibold">FAÇA UMA COTAÇÃO AGORA</span>
-                                    <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
+                                <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-20 h-20" color="white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path>
+                                    </svg>
                                 </button>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class=" bg-white">
-                        <div class="lg:container px-5 lg:px-3 py-8 lg:py-14 md:px-5 md:flex justify-between items-center opacity-100 ">
-                            <div class="lg:order-1 lg:w-1/2 flex items-center justify-center">
-                                <img src="simulacao-protecao-veicular/cadastro.png" alt="" class="" />
+                            <div class="relative">
+                                <video width="400" height="200" poster="simulacao-protecao-veicular/video3.png" class="video-player rounded-lg">
+                                    <source src="simulacao-protecao-veicular/03_reduzido.mp4" type="video/mp4">
+                                </video>
+
+                                <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-20 h-20" color="white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path>
+                                    </svg>
+                                </button>
                             </div>
 
-                            <div class="lg:order-2 lg:w-1/2 space-y-5 md:px-16 pt-5 md:pt-5 pb-5 md:pb-10 lg:mt-5">
-                                <div class="flex items-center space-x-4 mb-4">
-                                    <img src="simulacao-protecao-veicular/icons/icon-head-dash-blue.svg" alt="Brazil mask" class="h-full" />
-                                    <h3 class="text-md font-semibold text-gray-600">CADASTRO FÁCIL</h3>
-                                </div>
+                            <div class="relative">
+                                <video width="400" height="200" poster="simulacao-protecao-veicular/video4.png" class="video-player rounded-lg">
+                                    <source src="simulacao-protecao-veicular/04_reduzido.mp4" type="video/mp4">
+                                </video>
 
-                                <h2 class="text-2xl lg:text-3xl font-bold headline mb-3">
-                                    Cadastro fácil, rápido e <span>sem análise de perfil</span>
-                                    do condutor
-                                </h2>
-
-                                <p class="text-md lg:text-xl">Não levamos em consideração o histórico do condutor para
-                                    torná-lo um associado.</p>
-
-                                <p class="text-md lg:text-xl">Tudo é feito de forma prática e rápida, sem burocracia e
-                                    enrolação!</p>
-
-                                <ul class="text-left w-full space-y-1 mt-4">
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Sem análise de perfil</span>
-                                    </li>
-
-                                    <li class="flex space-x-2 items-center justify-start w-full ">
-                                        <i class="bi-patch-check text-lg text-green-500"></i>
-                                        <span>Sem análise ao SPC/SERASA</span>
-                                    </li>
-                                </ul>
-
-                                <button type="button" class="group transition rounded-xl space-x-2 items-center inline-flex py-2 px-4 w-full md:w-auto bg-tbblue-500 hover:bg-tbblue-100 text-white justify-center mt-3">
-                                    <span class="text-md text-md font-semibold">FAÇA UMA COTAÇÃO AGORA</span>
-                                    <i class="bi-arrow-right text-lg text-md group-hover:ml-4 transition-all"></i>
+                                <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-20 h-20" color="white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="bg-cover w-full py-10" style="background-image: url(&quot;simulacao-protecao-veicular/fundo.png&quot;);">
+                    <div class="">
+                        <div class="container mt-20 lg:flex">
+                            <div class="lg:w-1/2">
+                                <img src="simulacao-protecao-veicular/historia.png" alt="">
+                            </div>
+                            <div class="lg:w-1/2 space-y-10 pt-5">
+                                <h1 class="md:text-5xl text-3xl false font-bold text-gray-800" style="font-family: __Monda_146b97, __Monda_Fallback_146b97;">
+                                    Conheça a Bem Protege
+                                </h1>
+
+                                <div class="text-xl space-y-6 mt-4">
+                                    <p>Com mais de 10 anos de mercado, a Bem Protege é um grupo que possui mais de 20 empresas. Somos líder na proteção de veículos!</p>
+                                    <p>Pensando em situações que motoristas enfrentam diariamente, criamos um serviço de proteção que se adapta às necessidades individuais dos beneficiários. Desde o início, estamos comprometidos em entregar qualidade, com preços acessíveis.&nbsp;</p>
+                                    <p>Em 2020, iniciamos a nossa parceria com o Gusttavo Lima. Hoje, o Embaixador é sócio e um dos donos da Bem Protege!&nbsp;</p>
+                                    <p class="pb-10">Com a qualidade dos nossos produtos e a confiança do Embaixador, a Bem Protege não para de crescer. Somos a marca que conquistou o Brasil!</p>
+                                    <a class="py-4 px-5 lg:w-1/5 w-full bg-[#0A44EC] rounded-lg text-center text-white lg:text-xl font-bold" href="#">VENHA FAZER PARTE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-20 w-full">
+                    <div class="container text-center">
+                        <h1 class="md:text-5xl text-3xl false font-bold text-gray-800" style="font-family: __Monda_146b97, __Monda_Fallback_146b97;">
+                            Ainda com dúvida?
+                        </h1>
+                        <h2 class="text-center md:text-2xl text-lg mt-3">Confira as dúvidas mais frequentes sobre a Bem Protege e nossas coberturas!</h2>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="container lg:flex flex-col items-center space-y-10 md:mt-20 mt-10 gap-5">
+                            <div class="rounded-lg lg:w-2/3 px-5 py-5 bg-[#0A44EC] text-white mb-4 dropdown-toggle">
+                                <p class="font-bold md:text-xl text-sm cursor-pointer flex items-center justify-between">
+                                    Qual é a forma de pagamento dos planos de cobertura?
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                                    </svg>
+                                </p>
+
+                                <div class="py-3 hidden dropdown-content">
+                                    <p class="md:text-xl text-sm">
+                                        O pagamento é realizado mensalmente, por meio de boleto bancário.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="rounded-lg lg:w-2/3 px-5 py-5 bg-[#0A44EC] text-white mb-4 dropdown-toggle">
+                                <p class="font-bold md:text-xl text-sm cursor-pointer flex items-center justify-between">
+                                    A cobertura é apenas para o titular do plano?
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                                    </svg>
+                                </p>
+
+                                <div class="py-3 hidden dropdown-content">
+                                    <p class="md:text-xl text-sm">
+                                        Não, a cobertura abrange o veículo. Portanto, qualquer pessoa pode dirigir, desde que esteja dentro das leis em vigor.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="rounded-lg lg:w-2/3 px-5 py-5 bg-[#0A44EC] text-white mb-4 dropdown-toggle">
+                                <p class="font-bold md:text-xl text-sm cursor-pointer flex items-center justify-between">
+                                    Os valores das coberturas são diferentes para cada tipo de condutor?<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                                    </svg>
+                                </p>
+
+                                <div class="py-3 hidden dropdown-content">
+                                    <p class="md:text-xl text-sm">
+                                        Não analisamos o perfil do condutor, ou seja, os valores das coberturas variam apenas de acordo com os tipos de veículos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="rounded-lg lg:w-2/3 px-5 py-5 bg-[#0A44EC] text-white mb-4 dropdown-toggle">
+                                <p class="font-bold md:text-xl text-sm cursor-pointer flex items-center justify-between">
+                                    Em caso de acidente, somente o condutor e o veículo estão protegidos?
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                                    </svg>
+                                </p>
+
+                                <div class="py-3 hidden dropdown-content">
+                                    <p class="md:text-xl text-sm">
+                                        Caso o beneficiário seja o causador do acidente, tanto o seu veículo quanto o do terceiro estarão cobertos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container md:mt-20 mt-10">
+                        <div class="flex flex-col items-center pb-10">
+                            <a class="mt-10 py-6 px-20 lg:w-2/4 bg-[#0A44EC] rounded-2xl text-center text-white text-2xl font-bold" href="#">CONTRATE AGORA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER -->
                 <div class="bg-gray-100 ">
                     <div class="lg:container px-5 lg:px-0 flex flex-col py-5 lg:py-12 text-center items-center mx-auto space-y-4">
                         <img src="simulacao-protecao-veicular/logo.svg" alt="Brazil mask" class="w-72 h-auto mx-auto lg:mx-0" />
@@ -798,6 +750,8 @@ include('enviar_email.php');
             </main>
         </div>
     </div>
+
+    <script src="simulacao-protecao-veicular/_next/static/chunks/script.js"></script>
 </body>
 
 </html>

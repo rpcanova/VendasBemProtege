@@ -3851,3 +3851,48 @@
         }), _N_E = e.O()
     }
 ]);
+
+let videos = document.querySelectorAll('.video-player');
+let playButtons = document.querySelectorAll('.play-button');
+
+videos.forEach(function (video, index) {
+    playButtons[index].addEventListener('click', function () {
+        togglePlayPause(video, playButtons[index]);
+    });
+
+    video.addEventListener('click', function () {
+        togglePlayPause(video, playButtons[index]);
+    });
+
+    function togglePlayPause(video, playButton) {
+        if (video.paused) {
+            video.play();
+            playButton.style.display = 'none';
+        } else {
+            video.pause();
+            playButton.style.display = 'block';
+        }
+    }
+
+    video.addEventListener('play', function () {
+        playButtons[index].style.display = 'none';
+    });
+
+    video.addEventListener('pause', function () {
+        playButtons[index].style.display = 'block';
+    });
+});
+
+function initDropdowns() {
+    // Seleciona todos os elementos .dropdown-toggle e .dropdown-content
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    const dropdownContents = document.querySelectorAll('.dropdown-content');
+
+    // Itera sobre cada par de elementos para adicionar o evento de clique
+    dropdownToggles.forEach((toggle, index) => {
+        toggle.addEventListener('click', function() {
+            // Usa o índice para encontrar o elemento .dropdown-content correspondente
+            dropdownContents[index].classList.toggle('hidden');
+        });
+    });
+}
