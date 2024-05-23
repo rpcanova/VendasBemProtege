@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['field_email'];
     
     // Configurações do e-mail
-    $to = 'novacotacaobemprotege@gmail.com'; // Substitua pelo seu endereço de e-mail
+    $to = 'cleitoncesar.bp@gmail.com'; // Substitua pelo seu endereço de e-mail
     $subject = 'Cotação de Veículo';
     $message = "
         Olá, quero fazer uma cotação

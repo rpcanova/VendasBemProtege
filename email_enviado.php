@@ -2,6 +2,24 @@
 <html>
 
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NT487376');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16566883011"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16566883011');
+</script>
+    
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Proteção Veicular Bem Protege - Carros, motos, utilitários e caminhões</title>
@@ -22,6 +40,12 @@
 </head>
 
 <body>
+    
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT487376"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
     <div id="__next">
         <div class="md:container px-3 md:px-5 md:flex justify-between opacity-100 h-screen">
             <div class="md:order-1 lg:w-1/2 space-y-5 md:px-10 pt-3 md:pt-10 "><img src="simulacao-protecao-veicular/logo.svg" alt="Bem Protege Logo" class="w-10 md:w-36 lg:w-48 h-auto" />

@@ -6,6 +6,19 @@ include('enviar_email.php');
 <html>
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16566883011"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16566883011');
+    </script>
+
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Seguro Veicular Bem Protege - Carros, motos, utilitários e caminhões</title>
@@ -27,6 +40,59 @@ include('enviar_email.php');
     <script src="simulacao-protecao-veicular/_next/static/chunks/pages/index-2d9b39557cf87d0b.js" defer=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+    <script>
+        let videos = document.querySelectorAll('.video-player');
+        let playButtons = document.querySelectorAll('.play-button');
+
+        videos.forEach(function(video, index) {
+            playButtons[index].addEventListener('click', function() {
+                togglePlayPause(video, playButtons[index]);
+            });
+
+            video.addEventListener('click', function() {
+                togglePlayPause(video, playButtons[index]);
+            });
+
+            function togglePlayPause(video, playButton) {
+                if (video.paused) {
+                    video.play();
+                    playButton.style.display = 'none';
+                } else {
+                    video.pause();
+                    playButton.style.display = 'block';
+                }
+            }
+
+            video.addEventListener('play', function() {
+                playButtons[index].style.display = 'none';
+            });
+
+            video.addEventListener('pause', function() {
+                playButtons[index].style.display = 'block';
+            });
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NT487376');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <script type='text/javascript' id='chaty-front-end-js-extra'>
         /* <![CDATA[ */
         var chaty_settings = {
@@ -104,7 +170,7 @@ include('enviar_email.php');
                 },
                 "channels": [{
                     "channel": "Whatsapp",
-                    "value": "557592021713",
+                    "value": "5511940252349",
                     "hover_text": "AAA",
                     "svg_icon": "<svg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><circle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#49E670\"\/><path d=\"M12.9821 10.1115C12.7029 10.7767 11.5862 11.442 10.7486 11.575C10.1902 11.7081 9.35269 11.8411 6.84003 10.7767C3.48981 9.44628 1.39593 6.25317 1.25634 6.12012C1.11674 5.85403 2.13001e-06 4.39053 2.13001e-06 2.92702C2.13001e-06 1.46351 0.83755 0.665231 1.11673 0.399139C1.39592 0.133046 1.8147 1.01506e-06 2.23348 1.01506e-06C2.37307 1.01506e-06 2.51267 1.01506e-06 2.65226 1.01506e-06C2.93144 1.01506e-06 3.21063 -2.02219e-06 3.35022 0.532183C3.62941 1.19741 4.32736 2.66092 4.32736 2.79397C4.46696 2.92702 4.46696 3.19311 4.32736 3.32616C4.18777 3.59225 4.18777 3.59224 3.90858 3.85834C3.76899 3.99138 3.6294 4.12443 3.48981 4.39052C3.35022 4.52357 3.21063 4.78966 3.35022 5.05576C3.48981 5.32185 4.18777 6.38622 5.16491 7.18449C6.42125 8.24886 7.39839 8.51496 7.81717 8.78105C8.09636 8.91409 8.37554 8.9141 8.65472 8.648C8.93391 8.38191 9.21309 7.98277 9.49228 7.58363C9.77146 7.31754 10.0507 7.1845 10.3298 7.31754C10.609 7.45059 12.2841 8.11582 12.5633 8.38191C12.8425 8.51496 13.1217 8.648 13.1217 8.78105C13.1217 8.78105 13.1217 9.44628 12.9821 10.1115Z\" transform=\"translate(12.9597 12.9597)\" fill=\"#FAFAFA\"\/><path d=\"M0.196998 23.295L0.131434 23.4862L0.323216 23.4223L5.52771 21.6875C7.4273 22.8471 9.47325 23.4274 11.6637 23.4274C18.134 23.4274 23.4274 18.134 23.4274 11.6637C23.4274 5.19344 18.134 -0.1 11.6637 -0.1C5.19344 -0.1 -0.1 5.19344 -0.1 11.6637C-0.1 13.9996 0.624492 16.3352 1.93021 18.2398L0.196998 23.295ZM5.87658 19.8847L5.84025 19.8665L5.80154 19.8788L2.78138 20.8398L3.73978 17.9646L3.75932 17.906L3.71562 17.8623L3.43104 17.5777C2.27704 15.8437 1.55796 13.8245 1.55796 11.6637C1.55796 6.03288 6.03288 1.55796 11.6637 1.55796C17.2945 1.55796 21.7695 6.03288 21.7695 11.6637C21.7695 17.2945 17.2945 21.7695 11.6637 21.7695C9.64222 21.7695 7.76778 21.1921 6.18227 20.039L6.17557 20.0342L6.16817 20.0305L5.87658 19.8847Z\" transform=\"translate(7.7758 7.77582)\" fill=\"white\" stroke=\"white\" stroke-width=\"0.2\"\/><\/svg>",
                     "is_desktop": 1,
@@ -114,18 +180,18 @@ include('enviar_email.php');
                     "channel_type": "Whatsapp",
                     "custom_image_url": "",
                     "order": "",
-                    "pre_set_message": "Olá, quero fazer uma cotação",
+                    "pre_set_message": "Olá, quero fazer uma cotação de seguro",
                     "is_use_web_version": "1",
                     "is_open_new_tab": "1",
                     "is_default_open": "0",
                     "has_welcome_message": "0",
-                    "chat_welcome_message": "<p>Olá, quero fazer uma cotação<\/p>",
+                    "chat_welcome_message": "<p>Olá, quero fazer uma cotação de seguro<\/p>",
                     "qr_code_image_url": "",
                     "mail_subject": "",
                     "channel_account_type": "personal",
                     "contact_form_settings": [],
                     "contact_fields": [],
-                    "url": "https:\/\/web.whatsapp.com\/send?phone=557592021713&text=Ol%C3%A1%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o",
+                    "url": "https:\/\/web.whatsapp.com\/send?phone=5511940252349&text=Ol%C3%A1%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o",
                     "mobile_target": "",
                     "desktop_target": "_blank",
                     "target": "_blank",
@@ -150,6 +216,11 @@ include('enviar_email.php');
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT487376" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="__next">
         <div>
             <main class="">
@@ -344,7 +415,7 @@ include('enviar_email.php');
                 <div class="flex justify-center lg:py-10 py-5 container">
                     <div class="relative">
                         <video width="640" height="540" poster="simulacao-protecao-veicular/videoprincipal1.png" class="video-player rounded-lg">
-                            <source src="simulacao-protecao-veicular/videoprincipal.mp4" type="video/mp4">
+                            <source src="https://bemprotege.net/simulacao-protecao-veicular/videoprincipal.mp4" type="video/mp4">
                         </video>
                         <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-20 h-20" color="white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: white;">
@@ -548,7 +619,7 @@ include('enviar_email.php');
                         <div class="grid md:grid-cols-4 grid-cols-2 gap-5 lg:py-10 py-5">
                             <div class="relative">
                                 <video width="400" height="200" poster="simulacao-protecao-veicular/video1.png" class="video-player rounded-lg">
-                                    <source src="simulacao-protecao-veicular/01_reduzido.mp4" type="video/mp4">
+                                    <source src="https://bemprotege.net/simulacao-protecao-veicular/01_reduzido.mp4" type="video/mp4">
                                 </video>
 
                                 <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -560,7 +631,7 @@ include('enviar_email.php');
 
                             <div class="relative">
                                 <video id="wihr428uf" width="400" height="200" poster="simulacao-protecao-veicular/video2.png" class="video-player rounded-lg">
-                                    <source src="simulacao-protecao-veicular/02_reduzido.mp4" type="video/mp4">
+                                    <source src="https://bemprotege.net/simulacao-protecao-veicular/02_reduzido.mp4" type="video/mp4">
                                 </video>
 
                                 <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -572,7 +643,7 @@ include('enviar_email.php');
 
                             <div class="relative">
                                 <video width="400" height="200" poster="simulacao-protecao-veicular/video3.png" class="video-player rounded-lg">
-                                    <source src="simulacao-protecao-veicular/03_reduzido.mp4" type="video/mp4">
+                                    <source src="https://bemprotege.net/simulacao-protecao-veicular/03_reduzido.mp4" type="video/mp4">
                                 </video>
 
                                 <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -584,7 +655,7 @@ include('enviar_email.php');
 
                             <div class="relative">
                                 <video width="400" height="200" poster="simulacao-protecao-veicular/video4.png" class="video-player rounded-lg">
-                                    <source src="simulacao-protecao-veicular/04_reduzido.mp4" type="video/mp4">
+                                    <source src="https://bemprotege.net/simulacao-protecao-veicular/04_reduzido.mp4" type="video/mp4">
                                 </video>
 
                                 <button class="play-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
